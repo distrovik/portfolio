@@ -1,24 +1,73 @@
 body {
-    background-color: #04364A;
-    color: #DAFFFB;
+    background-color: rgb(17 24 39);
+    color: rgb(255, 255, 255);
 }
 
 h1 {
  font-family: 'Teko', sans-serif;
- font-size: 3rem;
+ font-size: 40px;
  margin: 0;
+ color: #DAFFFB;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+/* Navbar Section */
+.navbar {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
 
+.logo {
+    flex:2;
+}
+
+.logo img {
+    width: 20px;
+}
+
+.nav-item a {
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #DAFFFB;
+}
+
+.nav-item a:link {
+    background-color: rgb(17 24 39);
+    text-decoration: none;
+  }
+  
+.nav-item  a:visited {
+    background-color: rgb(17 24 39);
+    text-decoration: none;
+  }
+  
+.nav-item a:hover {
+    background-color: #33186B;
+    padding: 4px 8px;
+  }
+  
+.nav-item a:active {
+    background-color: #33186B;
+    padding: 4px 8px;
+  } 
+
+/* Navbar Section */
+
+/* Hero Section */
 .hero {
+    margin: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
 }
 
 .profilePic {
@@ -27,6 +76,27 @@ p {
     border-radius: 50%;
     object-fit: cover;
     object-position: 0px -85px;
-    border: solid 2px #DAFFFB;
 }
 
+.hero-link {
+    margin: 15px 0;
+}
+
+.hero-link a {
+    color: white;
+    margin: 0 2px;
+}
+
+.hero-link a :hover {
+    color: #DAFFFB;
+}
+
+.hero-link a ::after {
+    color: white;
+}
+/* Hero Section */
+@media screen and (max-width: 655px) {
+    .hero {
+        flex-direction: column-reverse;
+    }
+}
